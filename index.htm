@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="@@base@@" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1" />
+    <link rel="stylesheet" href="engine/main.css" />
+    <link rel="stylesheet" href="theme/sanfrancisco.css" />
+    <link rel="stylesheet" href="engine/katex/katex.min.css" />
+    <!--<link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />-->
+    <style>
+    :root{
+--logo: /assets/nylas-logo-horizontal-blue_ (10).png;
+--darkaccent1color: #fff;
+--lightaccent1color: #fff;
+--accent2: #43aa8b;
+--accent3: #f9c74f;
+--accent4: #90be6d;
+--accent5: #f8961e;
+--accent6: #577590;
+--lighttitletextcolor: #fff;
+--darktitletextcolor: #fff;
+--lightbodytextcolor: #fff;
+--darkbodytextcolor: #fff;
+--lightbackgroundcolor: #326ae8;
+--darkbackgroundcolor: transparent;
+--bodyfont: ui-monospace;
+--titlefont: system-ui;
+--lightframecolor: #000000;
+--darkframecolor: #000000;
+} 
+
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="engine/print.css"
+      media="print"
+    />
+  </head>
+
+  <body class="responsive">
+    <div class="reveal">
+      <div class="slides"><section class="variable-size-headings light cover-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="theaistack">The AI Stack</h1>
+
+<h3 id="buildingwithaiemail">Building with AI + Email</h3>
+
+<h5 id="rambansalnylas.com">Ram Bansal, Nylas.com</h5></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><p><strong>Generative AI is everywhere</strong>. Software is rapidly evolving with <strong>AI-powered features</strong> pioneering novel user experiences. As <strong>LLM models become a commodity</strong>, developers must focus on <strong>integrating relevant user context</strong> to deliver <strong>long-term value to end-users</strong>.</p>
+
+<blockquote>
+<p>TL;DR: Generative AI + Useful Data</p>
+</blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="-1to0">-1 to 0</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light full-image-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Screenshot%202024-07-10%20at%208.08.47%E2%80%AFPM.png" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="chattingisfunbut...">Chatting is fun but...</h3>
+
+<ul>
+<li>Only publicly available data</li>
+<li>Knowledge cut-off date</li>
+<li>Prompt engineering</li>
+<li>No context of the user</li>
+<li>Manual and iterative</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="chatapis">Chat &lt;&gt; APIs</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Clipboard_4.png" class=" size-contain position-left-top"></figure>
+        <div style=""><ul>
+<li><p>Chat with your Inbox</p></li>
+<li><p>Find an email</p></li>
+<li><p>Summarize an email</p></li>
+<li><p>Draft a reply to an email</p></li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="vibebox.app">vibebox.app</h3>
+<div class="single-image-wrapper"><figure><img src="images/Screenshot%202024-07-10%20at%208.26.06%E2%80%AFPM.png" class=" position-center-top"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="vibebox.app">vibebox.app</h2>
+<div class="single-image-wrapper"><figure><img src="images/Screenshot%202024-07-12%20at%207.12.13%E2%80%AFAM.png" class=" position-center-center"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="0to1">0 to 1</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="aiemailresponder">AI Email Responder</h2>
+
+<p><code class="hljs apache"><span class="hljs-section">&lt;Code Walkthrough/&gt;</span></code></p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.719rem;">
+        <div style=""><pre><code class="node hljs javascript"><span class="hljs-keyword">import</span> Nylas <span class="hljs-keyword">from</span> <span class="hljs-string">'nylas'</span>
+
+<span class="hljs-keyword">const</span> NylasConfig = {
+  <span class="hljs-attr">apiKey</span>: NYLAS_API_KEY,
+  <span class="hljs-attr">apiUri</span>: NYLAS_API_URI,
+}
+
+<span class="hljs-keyword">const</span> { messages } = <span class="hljs-keyword">new</span> Nylas(NylasConfig)
+
+messages.smartCompose.composeMessageReply({
+  <span class="hljs-attr">identifier</span>: NYLAS_GRANT_ID,
+  <span class="hljs-attr">messageId</span>: MESSAGE_ID,
+  <span class="hljs-attr">requestBody</span>: {
+    <span class="hljs-attr">prompt</span>: <span class="hljs-string">'Respond to the email'</span>,
+  }
+})
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="timeout...">Timeout...</h2>
+
+<h2 id="whyemail">Why Email?</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="4.5bemailusers">4.5B Email Users</h2>
+<div class="single-image-wrapper"><figure><img src="images/Clipboard_7.png" class=" size-contain position-center-center"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>"Generative AI will change </p>
+
+<p>‘everything’ about email" </p>
+
+<ul>
+<li>Rahul Vhora, CEO at Superhuman</li>
+</ul>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="waystollm"><em>Ways</em> to LLM</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="llmintegrationapproaches">LLM Integration Approaches</h3>
+
+<pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> Propriety LLMs (OpenAI)
+<span class="hljs-bullet">2.</span> Open Source LLMs (HuggingFace)
+<span class="hljs-bullet">3.</span> Local LLMS (Ollama) 🤔
+</code></pre>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="datallmsdbs">Data &gt; LLMs, DBs</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light v-split-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="localllms">Local LLMs</h3></div>
+        <div style=""><ul>
+<li>Sandbox Environment</li>
+<li>Privacy &amp; Data Control</li>
+<li>Rapid developer iteration</li>
+<li>On-Device Models</li>
+<li>Browser Supported</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 0.766rem;">
+        <div style=""><h3 id="huggingface.codocstransformers.js">huggingface.co/docs/transformers.js</h3>
+<div class="single-image-wrapper"><figure><img src="images/Screenshot%202024-07-11%20at%209.51.12%E2%80%AFAM.png" class=" position-center-top"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.766rem;">
+        <div style=""><h2 id="transformer.js">Transformer.js</h2></div>
+        <div style=""><p>Fill-Mask</p>
+
+<p>Question Answering</p>
+
+<p>Sentence Similarity</p>
+
+<p>Summarization*</p>
+
+<p>Text Classification</p>
+
+<p>Text Generation</p>
+
+<p>Text-to-text Generation</p>
+
+<p>Token Classification</p>
+
+<p>Translation</p>
+
+<p>Zero-Shot Classification</p>
+
+<p>Feature Extraction*</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="onnxruntime.ai">onnxruntime.ai</h3>
+<div class="single-image-wrapper"><figure><img src="images/Screenshot%202024-07-11%20at%2011.05.43%E2%80%AFAM.png" class=" position-center-top"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.578rem;">
+        <div style=""><pre><code class="javascript hljs"><span class="hljs-comment">//...Nylas SDK Initialization code...</span>
+
+<span class="hljs-keyword">const</span> messages = <span class="hljs-keyword">await</span> nylas.messages.list({
+  <span class="hljs-attr">identifier</span>: grantId,
+  <span class="hljs-attr">queryParams</span>: {
+    <span class="hljs-attr">limit</span>: <span class="hljs-number">1</span>,
+  }
+});
+
+<span class="hljs-keyword">import</span> { pipeline } <span class="hljs-keyword">from</span> <span class="hljs-string">'@xenova/transformers'</span>;
+
+<span class="hljs-keyword">const</span> summarize = <span class="hljs-keyword">await</span> pipeline(
+  <span class="hljs-string">'summarization'</span>, 
+  <span class="hljs-string">'Xenova/distilbart-cnn-6-6'</span>
+);
+
+<span class="hljs-keyword">const</span> summaries = messages.data.map(
+  <span class="hljs-keyword">async</span> message =&gt; {
+    <span class="hljs-keyword">await</span> summarize(message.body)
+  }
+)
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light v-split-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="retrieval-augmentedgenerationrag">Retrieval-Augmented Generation (RAG)</h2></div>
+        <div style=""><p>Combine LLMs with user data, like email, to create more accurate, context-aware outputs.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="semanticsearch">Semantic Search</h2>
+
+<p><code class="hljs apache"><span class="hljs-section">&lt;Code Walkthrough/&gt;</span></code></p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="vectorembeddings:dataaspointsinspace">Vector Embeddings: Data as Points in Space</h3>
+<div class="single-image-wrapper"><figure><img src="images/Clipboard_9.png" class=" size-contain position-center-top"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.531rem;">
+        <div style=""><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> { pipeline, env } <span class="hljs-keyword">from</span> <span class="hljs-string">'@xenova/transformers'</span>;
+
+<span class="hljs-keyword">const</span> emails = [<span class="hljs-comment">/*...array of emails...*/</span>]
+<span class="hljs-keyword">const</span> embeddings = []
+
+<span class="hljs-keyword">const</span> embedder = <span class="hljs-keyword">await</span> pipeline(<span class="hljs-string">'feature-extraction'</span>, <span class="hljs-string">'Xenova/all-MiniLM-L6-v2'</span>);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> email <span class="hljs-keyword">of</span> emails) {
+    
+  <span class="hljs-keyword">const</span> text = <span class="hljs-string">`
+    Email Subject: <span class="hljs-subst">${email.subject}</span>; 
+    Email Body: email.body}
+  `</span>;
+    
+  <span class="hljs-keyword">const</span> embedding = <span class="hljs-keyword">await</span> embedder(
+    text, 
+    { <span class="hljs-attr">pooling</span>: <span class="hljs-string">'mean'</span>, <span class="hljs-attr">normalize</span>: <span class="hljs-literal">true</span> }
+  );
+  
+  embeddings.push({<span class="hljs-attr">id</span>: email.id, <span class="hljs-attr">data</span>: embedding.data });
+}
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.485rem;">
+        <div style=""><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateSimilarity</span>(<span class="hljs-params">vec1, vec2</span>) </span>{
+  <span class="hljs-comment">/* Calculates the similarity between two vectors*/</span>
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">semanticSearch</span>(<span class="hljs-params">query=<span class="hljs-string">"developer conference"</span></span>) </span>{
+  <span class="hljs-keyword">const</span> embedder = <span class="hljs-keyword">await</span> pipeline(<span class="hljs-string">'feature-extraction'</span>, <span class="hljs-string">'Xenova/all-MiniLM-L6-v2'</span>);
+
+  <span class="hljs-keyword">const</span> queryEmbedding = <span class="hljs-keyword">await</span> embedder(
+    query, 
+    { <span class="hljs-attr">pooling</span>: <span class="hljs-string">'mean'</span>, <span class="hljs-attr">normalize</span>: <span class="hljs-literal">true</span> }
+  );
+
+  <span class="hljs-keyword">const</span> results = [];
+  
+  embeddings.map(embedding) =&gt; {
+    <span class="hljs-keyword">const</span> similarity = calculateSimilarity(
+      queryEmbedding.data,
+      <span class="hljs-attr">embedding</span>: embedding.data
+    );
+    
+    results.push({ id, similarity });
+  })
+  
+  <span class="hljs-keyword">return</span> results
+}
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="demo:">Demo:</h3>
+
+<h4 id="emailsemanticsearch">Email Semantic Search</h4>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><h3 id="ragchecklist:">RAG Checklist:</h3>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Dataset size and usage</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Compliance Requirements</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Type of Data / Content</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Model Overall Performance</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Budget (Time, Cost)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">End-User Usage (i.e. Async, Sync)</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="tobecontinued...">To Be Continued...</h3>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Model Selection &amp; Evaluation</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">RAG Optimization Techniques</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Machine Learning Operations</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Model Fine Tuning</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Browser LLMs</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="raggenerativeaiusefuldata">RAG = Generative AI + Useful Data</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings light grid-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Clipboard_5.png" class=" size-contain position-center-center"></figure><div style=""><h3 id="rambansal">Ram Bansal</h3>
+
+<p>nylas.com/devevents</p>
+
+<p>LinkedIn: ram-bansal</p>
+
+<p>X: @_RamB_</p></div><figure style=""><img src="images/Clipboard_6.png" class=" size-contain position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings light full-image-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Nylas-logo-horizontal-white_%20(6).png" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section></div>
+    </div>
+    <script src="engine/index.js"></script>
+    <!--<script src="engine/d3v4.min.js" charset="utf-8"></script>
+    <script src="engine/charts.min.js" charset="utf-8"></script>
+    <script src="engine/billboard.min.js"></script>-->
+    <script src="engine/pptxgen.min.js"></script>
+                                                   <script src="engine/pfill.js"></script>
+    <script src="engine/published.js"></script>
+
+    <script>
+      Reveal.configure({
+        progress: true,
+        keyboard: true,
+        dependencies: [
+          {
+            src: "engine/highlight.js",
+            sync: true,
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
